@@ -1,0 +1,22 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution
+{
+   public static void main(String[] args)
+ {
+    Scanner scn = new Scanner(System.in); 
+
+    // Declare a variable in Scanner
+ 
+    int a = scn.nextint();
+    int b = scn.nextint();
+    int c = scn.nextint();
+    scan.close();
+    
+   System.out.println(a); 
+   System.out.println(b);
+   System.out.println(c);    
+ }
+
+}
