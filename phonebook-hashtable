@@ -1,0 +1,40 @@
+//Complete this code or write your own from scratch
+import java.util.*;
+import java.io.*;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Scanner;
+
+class Solution{
+	public static void main(String []args)
+	{
+        HashMap<String, String> phonebook = new HashMap<String, String>();
+        
+		Scanner in = new Scanner(System.in);
+		int n=in.nextInt();
+		in.nextLine();
+		for(int i=0;i<n;i++)
+		{
+			String name=in.nextLine();
+			String phone=in.nextLine();
+			phonebook.put(name,phone);
+		}
+        
+		while(in.hasNextLine())
+		{
+			String name=in.nextLine();
+            
+            if(phonebook.containsKey(name))
+            {
+                System.out.println(name + "=" + phonebook.get(name));
+            }
+            
+            else 
+            {
+               System.out.println("Not found");   
+            }
+                       
+		}
+           in.close();
+	}
+}
